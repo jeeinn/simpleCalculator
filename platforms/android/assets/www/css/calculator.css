@@ -1,0 +1,124 @@
+*{
+    /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    /*-webkit-tap-highlight-color: rgba(0,0,0,0);*/
+    margin: 0;
+    padding:0;
+}
+html{font-size: 10px;}
+@media (min-width: 360px){html {font-size: 11px;}}
+@media (min-width: 375px){html {font-size: 11.7px;}}
+@media (min-width: 412px){html {font-size: 12.8px;}}
+@media (min-width: 414px){ html {font-size: 12.9px;}}
+@media (min-width: 600px){html {font-size: 18px;}}
+@media (min-width: 900px){html {font-size: 27px;}}
+@media (min-width: 1080px){ html {font-size: 33px;}}
+
+.bg_red{
+    background-color: #f95b5b;;
+}
+.bg_grad{
+    background-color: #cccccc;
+}
+.bg_ligth_gray{
+    background-color: #ededed;
+}
+.color_red{
+    color: #f95b5b;;
+}
+
+.color_white{
+    color: white;
+}
+
+.app{
+    width: 100%;
+    height:100%;
+    border: 0;
+}
+
+.app .copy-right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12rem;
+    background: transparent;
+    border: none;
+    opacity: 0.2;
+}
+
+.app .show_pannel{
+    padding-right: 1rem;
+}
+
+.app .show_pannel #current_result{
+    width: 100%;
+    height: 12rem;
+    line-height: 8rem;
+    font-size: 3rem;
+    border: none;
+    outline:none;
+    overflow: hidden;
+    text-align: right;
+}
+
+.app .keyboard{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.app .keyboard .row_buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.app .keyboard .row_buttons .item{
+    border: solid 0.1rem #cccccc;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 1rem auto;
+    cursor:pointer;
+}
+
+.app .keyboard .row_buttons .special_item{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.app .keyboard .row_buttons .special_item .item_wrapper{
+    width: 100%;
+    text-align: center;
+}
+.app .keyboard .row_buttons .special_item .new_item{
+    border: solid 0.1rem #cccccc;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 1rem auto;
+    cursor:pointer;
+    display: inline-block;
+}
+
+.app .keyboard .row_buttons .calculate_wrapper{
+    width: 50%;
+}
+.app .keyboard .row_buttons .calculate_wrapper .calculate{
+    border: solid 0.1rem #cccccc;
+    /*width: 13rem;*/
+    width: calc(100% - 4rem);
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 4rem;
+    margin: 1rem auto;
+    cursor:pointer;
+}
